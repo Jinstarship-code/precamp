@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Final0</title>
+    <link href="./final.css" rel="stylesheet" />
+    <script src="./final.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main_title">코드캠프 회원가입</div>
+      <div class="main_inputs">
+        <input
+          class="inputs_style"
+          id="email"
+          placeholder="이메일을 입력해 주세요."
+        />
+        <div class="last_check" id="error_email"></div>
+        <input
+          class="inputs_style"
+          id="name"
+          placeholder="이름을 입력해 주세요."
+        />
+        <div class="last_check" id="error_name"></div>
+        <input
+          class="inputs_style"
+          id="pw1"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <div class="last_check" id="error_pw1"></div>
+        <input
+          class="inputs_style"
+          id="pw2"
+          placeholder="비밀번호를 다시 입력해 주세요."
+        />
+        <div class="last_check" id="error_pw2"></div>
+      </div>
+      <div class="main_phone">
+        <input
+          class="phone_style"
+          id="p1"
+          oninput="ChangeFocus1()"
+          maxlength="3"
+        />
+        -
+        <input
+          class="phone_style"
+          id="p2"
+          oninput="ChangeFocus2()"
+          maxlength="4"
+        />
+        -
+        <input
+          class="phone_style"
+          id="p3"
+          oninput="TurnOnGetNumber()"
+          maxlength="4"
+        />
+      </div>
+      <div class="main_check">
+        <div class="check_number" id="number">000000</div>
+        <button
+          class="check_number_button"
+          id="getNumber_button"
+          disabled="true"
+          onclick="GetNumber()"
+        >
+          인증번호 전송
+        </button>
+      </div>
+      <div class="main_timewait">
+        <div class="check_number" id="timer">3:00</div>
+        <button
+          class="check_number_button"
+          id="finish"
+          onclick="CheckUser()"
+          disabled="true"
+        >
+          인증완료
+        </button>
+      </div>
+      <div class="main_location">
+        <select class="location" id="location">
+          <option selected disabled>지역을 선택하세요</option>
+          <option>서울</option>
+          <option>인천</option>
+          <option>경기</option>
+        </select>
+        <div class="last_check" id="error_location"></div>
+      </div>
+      <div class="main_gender">
+        <input type="radio" name="gender" id="gender_woman" />여성
+        <input type="radio" name="gender" id="gender_man" />남성
+        <div class="last_check" id="error_gender"></div>
+      </div>
+      <div>
+        <hr style="width: 380px; height: 1px; background-color: #e6e6e6" />
+      </div>
+      <div class="main_submit">
+        <button
+          class="main_submit_button"
+          id="submit_button"
+          onclick="SignUp()"
+          disabled="true"
+        >
+          가입하기
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

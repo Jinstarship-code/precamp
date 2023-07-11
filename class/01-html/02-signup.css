@@ -1,0 +1,68 @@
+body {
+  font-family: Noto Sans CJK KR;
+}
+
+.background {
+  border-radius: 20px;
+  border: 1px solid #aacdff;
+  background: #fff;
+  box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+#heading_text {
+  color: #0068ff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box {
+  width: 466px;
+  height: 80px;
+  top: 286px;
+  left: 725px;
+  border-bottom: 1px solid #0068ff;
+
+  color: #797979;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.gender_choice {
+  width: 140px;
+  height: 24px;
+
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.terms {
+  width: 454px;
+  height: 21px;
+  border-radius: 3px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #0068ff;
+  color: #0068ff;
+
+  width: 470px;
+  height: 75px;
+  border-radius: 10px;
+}

@@ -1,0 +1,138 @@
+* {
+  box-sizing: content-box;
+}
+
+.main {
+  width: 540px;
+  height: 960px;
+  border: 1px solid #aacdff;
+  background: #fff;
+  box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main_title {
+  color: #0068ff;
+  width: 380px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.main_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 340px;
+  justify-content: space-between;
+}
+
+.inputs_style {
+  width: 100%;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid #0068ff;
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: #797979;
+  padding: 18px 0px 18px 14.68px;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main_phone {
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone_style {
+  width: 100px;
+  height: 40px;
+}
+
+.main_check {
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.check_number {
+  padding-right: 30px;
+  color: #0068ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.check_number_button {
+  width: 120px;
+  height: 40px;
+  border-radius: 7.5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0068ff;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+button:disabled {
+  background-color: #d2d2d2;
+  color: gray;
+  cursor: default;
+}
+.main_timewait {
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main_location {
+  width: 380px;
+}
+
+.location {
+  width: 100%;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+
+.main_submit {
+  width: 380px;
+}
+
+.main_submit_button {
+  width: 100%;
+  height: 75px;
+  border: 1px solid #0068ff;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #0068ff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main_submit_button :disabled {
+  cursor: default;
+}
+
+.last_check {
+  color: red;
+  font-size: 8px;
+  text-align: center;
+}
