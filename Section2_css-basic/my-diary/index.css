@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.wrapper {
+  width: 620px;
+  border: 1px solid gray;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.wrapper__head {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed gray;
+}
+
+.wrapper__head__title {
+  font-size: 32px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper__head__sub-title {
+  font-weight: bold;
+  margin-bottom: 18px;
+  padding: 10px 0px;
+}
+
+#point {
+  text-decoration: underline;
+  color: orange;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+  display: block;
+}
+
+.wrapper__body {
+  border: 1px solid #dddddd;
+  padding: 20px 30px;
+}
+
+#content__header {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.go-to-work {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.get-off-of-work {
+  color: blue;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.study {
+  font-size: 35px;
+  font-weight: 700;
+  color: aqua;
+  font-style: italic;
+}
+
+.today-info {
+  padding-right: 10px;
+  text-align: end;
+  font-size: 14px;
+  color: #919191;
+}
