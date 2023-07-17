@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>03-01-of-type-and-child</title>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>제목입니다</h1>
+      <p>첫번째 p입니다.</p>
+      <p>두번째 p입니다.</p>
+      <span>첫번쨰 span입니다.</span>
+      <p>세번째 p 입니다.</p>
+    </div>
+  </body>
+</html>
+
+<!--
+ container안에 가상클래스 선택자를 이용할때 주의사항!
+
+ 만약 
+ .contianer p:first-child {
+    background:red;
+ }
+ 
+ 코드를 사용할 경우 적용되지 않음.
+ contianer의 첫번째 자식이 p가 아니기 떄문에.
+
+-->
