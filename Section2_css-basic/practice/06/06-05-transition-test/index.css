@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#box1 {
+  margin-bottom: 100px;
+  color: white;
+  width: 100px;
+  background-color: #123ecf;
+  transition: width 0.3s ease-in-out;
+}
+
+#box1:hover {
+  width: 300px;
+}
+
+#box2 {
+  margin-bottom: 100px;
+  color: white;
+  width: 100px;
+  background-color: #123ecf;
+  transition: all 0.3s ease-in-out;
+}
+
+#box2:hover {
+  width: 300px;
+  background-color: violet;
+}
+
+#box3 {
+  color: white;
+  width: 100px;
+  background-color: #123ecf;
+  transition: all 0.3s ease-in-out 0.5s;
+}
+
+#box3:hover {
+  width: 300px;
+  background-color: violet;
+}
