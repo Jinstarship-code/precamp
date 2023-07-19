@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
+.animation {
+  width: 300px;
+  height: 100px;
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.animation .quiz {
+  font-size: 16px;
+  width: 100%;
+  background-color: #ddd;
+  font-weight: 600;
+}
+
+.heart {
+  padding: 20px;
+  animation: scaleup 0.5s ease-in infinite alternate;
+}
+
+@keyframes scaleup {
+  from {
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.star {
+  padding: 20px;
+  animation: rotate 2s ease-in-out 0s alternate infinite;
+}
+
+@keyframes rotate {
+  from {
+    tranform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.rotate {
+  padding: 20px;
+}
+
+.box {
+}
