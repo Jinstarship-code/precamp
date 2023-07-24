@@ -7,10 +7,18 @@ const dataFromMaker = () => {
 };
 
 const counterMaker = () => {
+  const messageContainer = document.querySelector("#d-day-message");
+  messageContainer.textContent = "D-Day를 입력해 주세요.";
   const targetDateInput = dataFromMaker();
   const nowDate = new Date();
   const targetDate = new Date(targetDateInput).setHours(0, 0, 0, 0);
   const remaining = (targetDate - nowDate) / 1000;
+
+  if (remaining <= 0) {
+    console.log("타이머가 종료되었습니다.");
+  } else if (isNaN(remaining)) {
+    console.log("잘못 입력하셨습니다.");
+  }
 
   const remainingDate = Math.floor(remaining / 3600 / 24);
   const remainingHours = Math.floor(remaining / 3600) % 24;
