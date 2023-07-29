@@ -100,12 +100,13 @@ const weatherDataActive = function ({ location, weather }) {
 
 const weatherSearch = function ({ latitude, longitude }) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={API Key}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=03e06c4066193f4e16f62e7fcd7988c7`
   )
     .then((res) => {
       return res.json();
     })
     .then((json) => {
+      console.log(json);
       const weatherData = {
         location: json.name,
         weather: json.weather[0].main,
